@@ -91,17 +91,20 @@ header{
 
 .boton-empezar{
     text-decoration: none;
-    color: #4D4D4D;
-    border: 1px solid #1357B9;
+    background: #FB6515;
+    color: #FCFCFC;
+    border: 1px solid #FB6515;
+    border-radius: 5px;
+    font-size: 20px;
     padding: 10px 40px;
     align-self: baseline;
     transition: 0.6s;
 }
 
 .boton-empezar:hover{
-    background: #fb66159c;
+    background: #1357B9;
     color: #FCFCFC;
-    border-color: #FCFCFC;
+    border-color: #1357B9;
 }
 
 .banner2{
@@ -109,7 +112,6 @@ header{
     background-image: url(images/fondo2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
      
@@ -141,22 +143,69 @@ header{
 
 .tercer-banner{
     display: flex;
-    justify-content: space-around;
     text-align: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .tercer-banner h1{
     font-size: 50px;
     color: #1357B9;
     text-transform: uppercase;
+    padding-top: 30px;
 }
 
 .tercer-banner span{
     font-size: 40px;
-    color: #FB6515;
+    color: #fb6615d6;
 }
 
+.bannerproductos{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #FCFCFC;
+}
+
+.bannerproductos h1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 60px;
+    color: #FB6515;
+    text-transform: uppercase;
+}
+
+.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.productos div{
+    background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+    height: 400px;
+    width: 350px;
+    border-radius: 5%;
+}
+
+.productos img{
+    border-radius: 100%;
+    margin: 25px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.productos img:hover{
+    width: 260px;
+    border: 8px solid #FCFCFC;
+}
+
+.productos h3{
+    text-transform: uppercase;
+    color: #FCFCFC;
+    font-size: 22px;
+}
 
 
 
@@ -195,6 +244,24 @@ header{
 
     #check:checked ~ .menu{
         right: 0;
+    }
+
+   .productos{
+    display: flex;
+    flex-direction: column;
+   }
+
+    .productos div{
+        height: 300px;
+        width: 250px;
+    }
+
+    .productos img{
+        width: 200px;
+    }
+
+    .productos h3{
+        font-size: 16px;
     }
 
 
