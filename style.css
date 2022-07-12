@@ -1,0 +1,175 @@
+/*RESET*/
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*HEADER*/
+
+header{
+    height: 90px;
+    background:  #FCFCFC ;
+    padding: 0 50px;
+    color: #4D8EEB;
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+}
+
+
+.menu a{
+    color: #4D8EEB ;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #FB6515;
+}
+
+#check{
+    display: none;
+}
+
+/*BANNER*/
+
+#banner{
+    padding: 0 50px;
+    background-image: url(images/fondo1.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/*#banner::before{
+    content: '';
+    background: rgba(77,77,92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+}*/
+
+#banner{
+    display: flex;
+    justify-content: center;
+}
+
+.contenido-banner{
+    position: relative;
+    color: #4D4D4D;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-banner p{
+    font-weight: 600;
+    padding: 10px 0 15px 0;
+}
+
+
+.boton-empezar{
+    text-decoration: none;
+    color: #4D4D4D;
+    border: 1px solid #1357B9;
+    padding: 10px 40px;
+    align-self: baseline;
+    transition: 0.6s;
+}
+
+.boton-empezar:hover{
+    background: #fb66159c;
+    color: #FCFCFC;
+    border-color: #FCFCFC;
+}
+
+.banner2{
+    height: 100vh;
+    background-image: url(images/Banner3.png);
+    display: flex;
+    align-items: center;
+     
+}
+
+.segundo-banner{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 50px;
+}
+
+.segundo-banner h1{
+    font-size: 50px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    color: #1357B9;
+}
+
+
+.segundo-banner span{
+    color: #4D4D4D;
+}
+
+
+
+
+
+/*RESPONSIVE*/
+@media(max-width:768px){
+    /*HEADER*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4D4D5C;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+
+}
