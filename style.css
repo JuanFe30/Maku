@@ -106,7 +106,10 @@ header{
 
 .banner2{
     height: 100vh;
-    background-image: url(images/Banner3.png);
+    background-image: url(images/fondo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
      
@@ -123,12 +126,35 @@ header{
     font-size: 50px;
     padding-bottom: 30px;
     text-transform: uppercase;
-    color: #1357B9;
+    color: #FCFCFC;
 }
 
 
 .segundo-banner span{
-    color: #4D4D4D;
+    color: #FB6515;
+}
+
+.banner3{
+    height: 100vh;
+    background-color: #FCFCFC;
+}
+
+.tercer-banner{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.tercer-banner h1{
+    font-size: 50px;
+    color: #1357B9;
+    text-transform: uppercase;
+}
+
+.tercer-banner span{
+    font-size: 40px;
+    color: #FB6515;
 }
 
 
